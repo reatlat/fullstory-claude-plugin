@@ -53,6 +53,8 @@ Fullstory records every session on your site. This plugin lets Claude *read* tha
 
 It doesn't just answer "how many." It answers "why" — by reading the actual sessions behind the numbers.
 
+**[See a real conversation →](EXAMPLE.md)** — 10 skills, one investigation, zero SQL.
+
 <br>
 
 ## Skills
@@ -188,6 +190,8 @@ If this is useful, star the repo — it helps other teams discover it.
 MIT © [Alex Zappa](https://github.com/reatlat)
 
 Skill content adapted from [fullstorydev/fullstory-skills](https://github.com/fullstorydev/fullstory-skills) (MIT).
+
+[📝 Blog post: how we built 44 skills](BLOG.md) · [📋 MCP registry submission guide](SUBMIT.md) · [💬 Example conversation](EXAMPLE.md)
 
 <p align="center">
   <sub>Not affiliated with Fullstory. Fullstory is a trademark of Fullstory, Inc.</sub>
