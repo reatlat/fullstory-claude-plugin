@@ -57,7 +57,7 @@ It doesn't just answer "how many." It answers "why" — by reading the actual se
 
 ## Skills
 
-Forty skills ship with the plugin. Claude loads the right one automatically based on what you ask.
+Forty-four skills ship with the plugin. Claude loads the right one automatically based on what you ask.
 
 ### Analytics & Measurement
 
@@ -80,6 +80,8 @@ Forty skills ship with the plugin. Claude loads the right one automatically base
 | `persona-builder` | "What types of users do we have?" | Behavioral personas from real session data, data-driven user profiles |
 | `lifecycle-analyzer` | "How many users are at risk of churning?" | New → active → at-risk → churned lifecycle mapping with transition rates |
 | `onboarding-tutor` | "I'm new — how do I use this?" | Interactive onboarding, role-specific guides, first query walkthrough |
+| `query-translator` | "How do I measure user happiness?" | Translates vague business questions into measurable Fullstory queries |
+| `nps-proxy` | "What's our user satisfaction?" | Behavioral NPS alternative — satisfaction proxy from frustration/engagement signals |
 
 ### Investigation & Debugging
 
@@ -98,6 +100,8 @@ Forty skills ship with the plugin. Claude loads the right one automatically base
 | `heatmap-generator` | "What do users click on most?" | Element-level interaction density, dead click zones, rage click hotspots |
 | `a11y-analyzer` | "Can keyboard users navigate this?" | Keyboard traps, focus order, missing labels, WCAG audit from real sessions |
 | `api-monitor` | "Are API errors affecting users?" | Endpoint latency, error rates, API-driven UX failures, backend deploy impact |
+| `session-playlist` | "Bundle these sessions for the team" | Curate annotated playlists with timestamps, narratives, and key moments |
+| `changelog-detective` | "What actually changed after the deploy?" | Diff errors, frustrations, and behaviors before/after — catch undocumented changes |
 
 ### Operations & Maintenance
 
