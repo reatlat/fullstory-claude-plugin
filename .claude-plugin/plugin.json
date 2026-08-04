@@ -1,0 +1,9 @@
+{
+  "name": "fullstory",
+  "version": "1.0.0",
+  "description": "Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights.",
+  "author": { "name": "Fullstory" },
+  "homepage": "https://www.fullstory.com",
+  "license": "MIT",
+  "keywords": ["analytics", "customer-experience", "behavioral-analytics", "session-replay"]
+}
