@@ -57,7 +57,7 @@ It doesn't just answer "how many." It answers "why" — by reading the actual se
 
 ## Skills
 
-Thirteen skills ship with the plugin. Claude loads the right one automatically based on what you ask.
+Nineteen skills ship with the plugin. Claude loads the right one automatically based on what you ask.
 
 ### Analytics & Measurement
 
@@ -69,6 +69,9 @@ Thirteen skills ship with the plugin. Claude loads the right one automatically b
 | `funnel-doctor` | "Where are users dropping off?" | Funnel step analysis, drop-off quantification, session evidence for why |
 | `weekly-digest` | "What changed this week?" | Structured report: frustrations, errors, conversion, traffic — week-over-week |
 | `page-performance` | "Which page has the most errors?" | Page-level health: error rates, device breakdown, navigation patterns |
+| `experiment-analyzer` | "Did the variant win?" | A/B test analysis: impact, significance assessment, segment breakdown, side effects |
+| `retention-analyzer` | "Are users coming back?" | N-day retention, cohort stickiness, churn signals, engagement depth |
+| `anomaly-detector` | "Did anything unusual happen?" | Proactive scan: spikes, drops, pattern breaks across all key metrics |
 
 ### Investigation & Debugging
 
@@ -79,6 +82,7 @@ Thirteen skills ship with the plugin. Claude loads the right one automatically b
 | `session-review` | Session URL or bug report | Open → view → diff → close. Visual replay without a video player |
 | `session-search` | "Find sessions for user 84721" | Search by user ID, device, browser, page, custom event |
 | `user-journey` | "Trace user@example.com's sessions" | Multi-session timeline, friction points, churn signals |
+| `jira-bug-reporter` | "File a bug for this session" | Auto-populated bug reports with session URL, errors, repro steps, severity |
 
 ### Operations & Maintenance
 
@@ -89,6 +93,8 @@ Thirteen skills ship with the plugin. Claude loads the right one automatically b
 | `cohort-compass` | Cohort analysis (auto) | Build, track, reuse segments across analyses |
 | `annotation-ops` | "Mark the deploy on the timeline" (auto) | Create deploy markers, experiment windows, incident tags |
 | `revenue-impact` | "What does this cost us?" (auto) | Attach dollar estimates to UX issues and conversion drops |
+| `segment-wizard` | "Help me build a segment for..." | Guided interactive cohort building for non-technical users |
+| `privacy-auditor` | "Are we capturing PII?" | Audit session capture for PII leaks, verify masking and exclusion rules |
 
 ### Agents (isolated context workers)
 
