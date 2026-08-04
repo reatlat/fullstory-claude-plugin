@@ -1,6 +1,6 @@
 {
   "name": "fullstory",
-  "owner": { "name": "Fullstory Inc" },
+  "owner": { "name": "Alex Zappa (reatlat)" },
   "metadata": {
     "description": "Fullstory behavioral analytics, session context, and MCP integration for Claude Code."
   },
