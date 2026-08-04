@@ -57,7 +57,7 @@ It doesn't just answer "how many." It answers "why" — by reading the actual se
 
 ## Skills
 
-Twenty-two skills ship with the plugin. Claude loads the right one automatically based on what you ask.
+Twenty-eight skills ship with the plugin. Claude loads the right one automatically based on what you ask.
 
 ### Analytics & Measurement
 
@@ -72,6 +72,8 @@ Twenty-two skills ship with the plugin. Claude loads the right one automatically
 | `experiment-analyzer` | "Did the variant win?" | A/B test analysis: impact, significance assessment, segment breakdown, side effects |
 | `retention-analyzer` | "Are users coming back?" | N-day retention, cohort stickiness, churn signals, engagement depth |
 | `anomaly-detector` | "Did anything unusual happen?" | Proactive scan: spikes, drops, pattern breaks across all key metrics |
+| `campaign-tracker` | "How did the email campaign perform?" | UTM-tagged traffic, landing page conversion, channel comparison, ROI signals |
+| `feature-adoption` | "Are users using the new feature?" | Adoption funnel: awareness → trial → adoption → retention, segment breakdown |
 
 ### Investigation & Debugging
 
@@ -83,6 +85,10 @@ Twenty-two skills ship with the plugin. Claude loads the right one automatically
 | `session-search` | "Find sessions for user 84721" | Search by user ID, device, browser, page, custom event |
 | `user-journey` | "Trace user@example.com's sessions" | Multi-session timeline, friction points, churn signals |
 | `jira-bug-reporter` | "File a bug for this session" | Auto-populated bug reports with session URL, errors, repro steps, severity |
+| `customer-360` | "Show me everything about this user" | Full customer snapshot: sessions, purchases, errors, engagement trajectory |
+| `form-analyzer` | "Which form field causes drop-off?" | Field-by-field abandonment, validation errors, time-to-complete, mobile forms |
+| `mobile-analyzer` | "How's the mobile experience?" | Touch targets, viewport issues, responsive bugs, mobile vs desktop gap |
+| `scroll-depth-analyzer` | "Are users reading to the bottom?" | Content visibility, CTA placement, where users stop scrolling per page |
 
 ### Operations & Maintenance
 
