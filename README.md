@@ -57,7 +57,7 @@ It doesn't just answer "how many." It answers "why" — by reading the actual se
 
 ## Skills
 
-Thirty-six skills ship with the plugin. Claude loads the right one automatically based on what you ask.
+Forty skills ship with the plugin. Claude loads the right one automatically based on what you ask.
 
 ### Analytics & Measurement
 
@@ -77,6 +77,9 @@ Thirty-six skills ship with the plugin. Claude loads the right one automatically
 | `benchmark-analyzer` | "What's our baseline conversion rate?" | Historical baselines, target setting, progress tracking, industry context |
 | `dashboard-builder` | "Set up a product health dashboard" | Curated KPI dashboards with north star metrics, auto-saved for weekly review |
 | `predictive-alerts` | "Warn me before conversion drops too low" | Trend projection, threshold breach prediction, early warning system |
+| `persona-builder` | "What types of users do we have?" | Behavioral personas from real session data, data-driven user profiles |
+| `lifecycle-analyzer` | "How many users are at risk of churning?" | New → active → at-risk → churned lifecycle mapping with transition rates |
+| `onboarding-tutor` | "I'm new — how do I use this?" | Interactive onboarding, role-specific guides, first query walkthrough |
 
 ### Investigation & Debugging
 
@@ -109,6 +112,7 @@ Thirty-six skills ship with the plugin. Claude loads the right one automatically
 | `privacy-auditor` | "Are we capturing PII?" | Audit session capture for PII leaks, verify masking and exclusion rules |
 | `webhook-health` | "Are our webhooks delivering?" | Webhook delivery monitoring, integration health, data pipeline verification |
 | `slack-reporter` | "Send this to #product-engineering" | Format findings as scannable Slack messages with evidence links and action items |
+| `incident-responder` | "We have an incident — checkout is down" | Structured response: triage, blast radius, session evidence, status updates |
 
 ### Agents (isolated context workers)
 
