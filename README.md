@@ -57,37 +57,45 @@ It doesn't just answer "how many." It answers "why" — by reading the actual se
 
 ## Skills
 
-Three skills ship with the plugin. Claude loads the right one automatically based on what you ask.
+Thirteen skills ship with the plugin. Claude loads the right one automatically based on what you ask.
 
-### `general-analysis` — Metrics, segments, and compute
+### Analytics & Measurement
 
-Triggered by any quantitative question. The skill:
+| Skill | Trigger | What it does |
+|-------|---------|-------------|
+| `quick-stats` | "How many users yesterday?" | One-number answers. Build → compute → present. No analysis overhead. |
+| `general-analysis` | Any quantitative question | Full workflow: classify intent, search/build, compute, validate, investigate |
+| `comparisons` | A vs B questions (auto) | Picks dimensionality vs segments correctly — prevents silent wrong results |
+| `funnel-doctor` | "Where are users dropping off?" | Funnel step analysis, drop-off quantification, session evidence for why |
+| `weekly-digest` | "What changed this week?" | Structured report: frustrations, errors, conversion, traffic — week-over-week |
+| `page-performance` | "Which page has the most errors?" | Page-level health: error rates, device breakdown, navigation patterns |
 
-1. **Classifies intent** — count? breakdown? trend? comparison?
-2. **Searches before building** — checks if someone already built this metric, ranks by popularity
-3. **Builds or resolves** — creates new segments/metrics or reuses existing ones
-4. **Computes** — runs the metric against your data
-5. **Validates** — zero results? anomalies? trend discontinuities? catches them automatically
-6. **Investigates** — if the number needs explaining, pulls sessions to find the *why*
+### Investigation & Debugging
 
-Reference docs for [validation rules](skills/general-analysis/references/validation.md) and [session investigation patterns](skills/general-analysis/references/sessions.md).
+| Skill | Trigger | What it does |
+|-------|---------|-------------|
+| `frustration-hunter` | "What's frustrating users?" | Rage clicks, dead clicks, form abandonment — ranked, with session evidence |
+| `error-forensics` | "What's breaking in production?" | JS errors, network failures, console exceptions — root cause from sessions |
+| `session-review` | Session URL or bug report | Open → view → diff → close. Visual replay without a video player |
+| `session-search` | "Find sessions for user 84721" | Search by user ID, device, browser, page, custom event |
+| `user-journey` | "Trace user@example.com's sessions" | Multi-session timeline, friction points, churn signals |
 
-### `comparisons` — A/B done right (auto-invoked)
+### Operations & Maintenance
 
-Compares anything — mobile vs desktop, enterprise vs free, Chrome vs Safari. The skill knows the hard part: event properties (device, browser, page) use *dimensionality* while user properties (plan, signup date, account) use *segments*. Picking wrong silently produces wrong results. This skill picks right every time.
+| Skill | Trigger | What it does |
+|-------|---------|-------------|
+| `deploy-radar` | "I just deployed — did anything break?" | Before/after comparison: errors, conversion, frustrations |
+| `metric-auditor` | "Clean up our metrics" (auto) | Find duplicates, stale segments, misconfigured objects |
+| `cohort-compass` | Cohort analysis (auto) | Build, track, reuse segments across analyses |
+| `annotation-ops` | "Mark the deploy on the timeline" (auto) | Create deploy markers, experiment windows, incident tags |
+| `revenue-impact` | "What does this cost us?" (auto) | Attach dollar estimates to UX issues and conversion drops |
 
-### `session-review` — Session replay in your terminal
+### Agents (isolated context workers)
 
-Point Claude at a session URL and it:
-- Opens the session, reads the event transcript
-- Finds key moments (navigations, clicks, errors, rage clicks)
-- Takes visual snapshots at those timestamps
-- Diffs before/after to see what changed
-- Reports what happened — no video player needed
-
-### Agent: `session-context`
-
-Reads session transcripts in an isolated context window. Keeps your main conversation clean — you can pull 20 sessions without blowing up context.
+| Agent | What it does |
+|-------|-------------|
+| `session-context` | Reads a single session transcript in isolation — keeps main context clean |
+| `batch-session-reader` | Reads multiple sessions in parallel — 5x faster for investigation workflows |
 
 <br>
 
