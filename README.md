@@ -57,7 +57,7 @@ It doesn't just answer "how many." It answers "why" — by reading the actual se
 
 ## Skills
 
-Twenty-eight skills ship with the plugin. Claude loads the right one automatically based on what you ask.
+Thirty-six skills ship with the plugin. Claude loads the right one automatically based on what you ask.
 
 ### Analytics & Measurement
 
@@ -74,6 +74,9 @@ Twenty-eight skills ship with the plugin. Claude loads the right one automatical
 | `anomaly-detector` | "Did anything unusual happen?" | Proactive scan: spikes, drops, pattern breaks across all key metrics |
 | `campaign-tracker` | "How did the email campaign perform?" | UTM-tagged traffic, landing page conversion, channel comparison, ROI signals |
 | `feature-adoption` | "Are users using the new feature?" | Adoption funnel: awareness → trial → adoption → retention, segment breakdown |
+| `benchmark-analyzer` | "What's our baseline conversion rate?" | Historical baselines, target setting, progress tracking, industry context |
+| `dashboard-builder` | "Set up a product health dashboard" | Curated KPI dashboards with north star metrics, auto-saved for weekly review |
+| `predictive-alerts` | "Warn me before conversion drops too low" | Trend projection, threshold breach prediction, early warning system |
 
 ### Investigation & Debugging
 
@@ -89,6 +92,9 @@ Twenty-eight skills ship with the plugin. Claude loads the right one automatical
 | `form-analyzer` | "Which form field causes drop-off?" | Field-by-field abandonment, validation errors, time-to-complete, mobile forms |
 | `mobile-analyzer` | "How's the mobile experience?" | Touch targets, viewport issues, responsive bugs, mobile vs desktop gap |
 | `scroll-depth-analyzer` | "Are users reading to the bottom?" | Content visibility, CTA placement, where users stop scrolling per page |
+| `heatmap-generator` | "What do users click on most?" | Element-level interaction density, dead click zones, rage click hotspots |
+| `a11y-analyzer` | "Can keyboard users navigate this?" | Keyboard traps, focus order, missing labels, WCAG audit from real sessions |
+| `api-monitor` | "Are API errors affecting users?" | Endpoint latency, error rates, API-driven UX failures, backend deploy impact |
 
 ### Operations & Maintenance
 
@@ -101,6 +107,8 @@ Twenty-eight skills ship with the plugin. Claude loads the right one automatical
 | `revenue-impact` | "What does this cost us?" (auto) | Attach dollar estimates to UX issues and conversion drops |
 | `segment-wizard` | "Help me build a segment for..." | Guided interactive cohort building for non-technical users |
 | `privacy-auditor` | "Are we capturing PII?" | Audit session capture for PII leaks, verify masking and exclusion rules |
+| `webhook-health` | "Are our webhooks delivering?" | Webhook delivery monitoring, integration health, data pipeline verification |
+| `slack-reporter` | "Send this to #product-engineering" | Format findings as scannable Slack messages with evidence links and action items |
 
 ### Agents (isolated context workers)
 
