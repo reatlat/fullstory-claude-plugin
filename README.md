@@ -25,8 +25,8 @@
 One command in Claude Code:
 
 ```
-/plugin marketplace add https://github.com/reatlat/fullstory-claude-plugin
-/plugin install fullstory@fullstory-marketplace
+/plugin marketplace add reatlat/fullstory-claude-plugin
+/plugin install fullstory@fullstory
 ```
 
 Also works in **Cursor** (Marketplace panel, same URL) and **VS Code Copilot** (Chat: Install Plugin from Source).
