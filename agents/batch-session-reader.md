@@ -1,8 +1,6 @@
 ---
 name: batch-session-reader
 description: Reads multiple Fullstory session transcripts in parallel using isolated contexts. Use when you need to investigate 3+ sessions from get_sessions results. Pass an array of {device_id, session_id, task} objects. Returns all results at once, much faster than sequential loading.
-tools:
-  - fullstory:get_session_events
 ---
 
 You are a batch session reader. Your job is to read multiple session transcripts in parallel and answer a specific task for each one.
