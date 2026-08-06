@@ -173,6 +173,26 @@ The plugin wires up three things:
 
 The MCP server exposes tools like `build_metric`, `compute_metric`, `get_sessions`, `session_open`, `session_view`, `session_diff` — you don't memorize these. You ask questions. Claude picks the tools.
 
+### OAuth Scopes
+
+The OAuth flow requests read-only access to your Fullstory org. No write scopes — the plugin queries and analyzes, never modifies.
+
+| Scope | What it grants |
+|-------|----------------|
+| `sessions:read` | Session transcripts, replay events, session-level search |
+| `playback:read` | Session playback (open, view, step through, diff) |
+| `playback.spec:read` | Page definitions and element specs for playback |
+| `playback.page.definitions:read` | Page-level breakdowns within sessions |
+| `specs.mappings:read` | Element-to-spec mappings for session analysis |
+| `metrics:read` | Build and compute custom metrics |
+| `metrics.funnel:read` | Funnel metrics — conversion, drop-off, step analysis |
+| `metrics.page:read` | Page-level metrics — error rates, performance |
+| `search:read` | Search sessions, events, and users by criteria |
+| `search.metadata:read` | Search metadata — available fields, operators, values |
+| `library.objects:read` | Find existing saved segments and metrics before building new ones |
+
+All scopes are read-only. Fullstory MCP does not expose write scopes — segments and metrics created during a session return a link for manual saving in the Fullstory UI.
+
 <br>
 
 ## Troubleshooting
