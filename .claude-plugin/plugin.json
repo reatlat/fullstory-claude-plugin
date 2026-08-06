@@ -1,9 +1,9 @@
 {
-  "name": "fullstory",
+  "name": "fullstory-reatlat",
   "version": "1.0.0",
-  "description": "Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights.",
+  "description": "Unofficial — Fullstory behavioral analytics, session replays, and customer experience insights by reatlat.",
   "author": { "name": "Alex Zappa (reatlat)" },
   "homepage": "https://github.com/reatlat/fullstory-claude-plugin",
   "license": "MIT",
-  "keywords": ["analytics", "customer-experience", "behavioral-analytics", "session-replay"]
+  "keywords": ["analytics", "customer-experience", "behavioral-analytics", "session-replay", "unofficial"]
 }

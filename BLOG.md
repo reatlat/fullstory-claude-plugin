@@ -59,7 +59,7 @@ The entire collection is open source (MIT) and installs with one command:
 
 ```
 /plugin marketplace add https://github.com/reatlat/fullstory-claude-plugin
-/plugin install fullstory@fullstory-marketplace
+/plugin install fullstory-reatlat@fullstory-marketplace
 ```
 
 ---

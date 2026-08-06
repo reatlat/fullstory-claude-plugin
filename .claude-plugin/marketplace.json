@@ -6,10 +6,10 @@
   },
   "plugins": [
     {
-      "name": "fullstory",
+      "name": "fullstory-reatlat",
       "version": "1.0.0",
       "source": "./",
-      "description": "Connect Claude to Fullstory to query behavioral analytics, session replays, and customer experience insights."
+      "description": "Unofficial — Fullstory behavioral analytics, session replays, and customer experience insights by reatlat."
     }
   ]
 }
