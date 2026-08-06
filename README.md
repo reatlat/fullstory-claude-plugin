@@ -33,6 +33,23 @@ Also works in **Cursor** (Marketplace panel, same URL) and **VS Code Copilot** (
 
 No local server. No API keys to juggle. OAuth handles auth — you sign in once and it just works.
 
+### Claude Desktop (manual setup)
+
+Claude Desktop doesn't support the plugin marketplace — you get the MCP tools but not the skills/agents. Add this to `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "fullstory": {
+      "type": "http",
+      "url": "https://api.fullstory.com/mcp/fullstory"
+    }
+  }
+}
+```
+
+Config file locations: `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS), `%APPDATA%\Claude\claude_desktop_config.json` (Windows). Restart Claude Desktop after editing.
+
 <br>
 
 ## What It Does
